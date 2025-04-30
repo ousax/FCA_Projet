@@ -2,28 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Welcome to FCA Project - A simple landing page">
-  <title>FCA Projet</title>
+  <title>Login - SneakerLand</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>Welcome to FCA Projet</h1>
-    <p>Your project landing page.</p>
-  </header>
-
-  <main>
-    <section>
-      <h2>About This Project</h2>
-      <p>This is a basic web project hosted on GitHub Pages.</p>
-      <button id="infoButton">Click Me</button>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 FCA Projet. All rights reserved.</p>
-  </footer>
+<body class="login-page">
+  <div class="login-container">
+    <h1>SneakerLand Login</h1>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+      <p><a href="#" id="resetPassword">Forgot password?</a></p>
+    </form>
+    <p id="loginMessage"></p>
+  </div>
 
   <script src="app.js"></script>
 </body>
