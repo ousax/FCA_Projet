@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
   
-        if (username === 'admin' && password === '1234') {
+        if (username === 'FCAdmin' && password === 'oualidfca') {
           window.location.href = 'home.html';
         } else {
-          message.textContent = 'Incorrect username or password!';
+          message.textContent = 'Le mot de passe saisi est incorrect';
           message.style.color = 'red';
         }
       });
@@ -21,8 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (resetLink) {
       resetLink.addEventListener('click', (e) => {
         e.preventDefault();
-        alert('A password reset link has been sent to your email!');
+        alert('Nous avons vous envoyé des instruction pour reinitialiser votre mot de passe!');
       });
     }
   });
-  

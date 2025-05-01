@@ -77,6 +77,10 @@ body {
     width: 200px;
     text-align: center;
   }
+  .products:hover{
+    cursor: pointer;
+
+  }
   
   .product img {
     width: 100%;
